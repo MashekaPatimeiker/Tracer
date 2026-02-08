@@ -14,7 +14,7 @@
 [Dd]ebug/
 [Dd]ebugPublic/
 [Rr]elease/
-[Rr]eleases/
+[git remote add origin https://github.com/ваш-username/ваш-репозиторий.gitRr]eleases/
 x64/
 x86/
 [Ww][Ii][Nn]32/
