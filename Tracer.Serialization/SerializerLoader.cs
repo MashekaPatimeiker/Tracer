@@ -32,7 +32,7 @@ namespace Tracer.Serialization
                 
                 try
                 {
-                    // Загружаем сборку через LoadFrom с помощью AssemblyLoadContext
+                  
                     var assembly = Assembly.LoadFrom(assemblyFile);
                     Console.WriteLine($"Loaded assembly: {assembly.FullName}");
                     

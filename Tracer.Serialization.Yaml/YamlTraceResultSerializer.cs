@@ -7,7 +7,6 @@ using Tracer.Core;
 
 namespace Tracer.Serialization.Yaml
 {
-    // DTO классы для сериализации
     public class YamlTraceResult
     {
         public List<YamlThreadTraceResult> Threads { get; set; } = new();

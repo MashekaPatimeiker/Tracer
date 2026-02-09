@@ -7,7 +7,6 @@ using Tracer.Core;
 
 namespace Tracer.Serialization.Json
 {
-    // DTO классы для сериализации
     public class JsonTraceResult
     {
         [JsonPropertyName("threads")]

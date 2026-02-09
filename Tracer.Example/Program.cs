@@ -50,11 +50,9 @@ namespace Tracer.Example
         {
             var tracer = new Tracer.Core.Tracer();
 
-            // Single thread example
             Foo foo = new Foo(tracer);
             foo.MyMethod();
 
-            // Multi-thread example
             Task task1 = Task.Run(() =>
             {
                 tracer.StartTrace();
@@ -71,13 +69,10 @@ namespace Tracer.Example
 
             Task.WaitAll(task1, task2);
 
-            // Get results
             var traceResult = tracer.GetTraceResult();
 
-            // Load serializers
             var serializers = SerializerLoader.LoadSerializers();
             
-            // Serialize results
             foreach (var serializer in serializers)
             {
                 string fileName = $"result.{serializer.Format}";

@@ -6,7 +6,6 @@ using Tracer.Core;
 
 namespace Tracer.Serialization.Xml
 {
-    // DTO классы для сериализации
     [XmlRoot("root")]
     public class XmlTraceResult
     {
